@@ -42,10 +42,13 @@ http://localhost:3000/
 
 ## Screenshots
 
+### Desktop view 
 ![Desktop view](./public/images/screenshots/ss-1.png)
 
+### Tablet/ Laptop view 
 ![Tablet/ Laptop view](./public/images/screenshots/ss-2.png)
 
+### Mobile view 
 ![Mobile view](./public/images/screenshots/ss-3.png)
 
 
