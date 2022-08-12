@@ -42,11 +42,11 @@ http://localhost:3000/
 
 ## Screenshots
 
-![](./public/images/screenshots/ss-1.png)
+![Desktop view](./public/images/screenshots/ss-1.png)
 
-![](./public/images/screenshots/ss-2.png)
+![Tablet/ Laptop view](./public/images/screenshots/ss-2.png)
 
-![](./public/images/screenshots/ss-3.png)
+![Mobile view](./public/images/screenshots/ss-3.png)
 
 
 ## Criado com
