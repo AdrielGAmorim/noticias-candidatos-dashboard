@@ -152,12 +152,11 @@ export const Closed = styled.div`
         cursor: pointer;
         color: #F9F9F9;
         border-radius: 8px;
-        box-shadow: 1px 1px 2px silver;
+        box-shadow: -1px -1px 2px silver;
         
         &:hover,
         &focus {
-            background-color: rgba(0, 0, 0, .2);
-            box-shadow: -1px -1px 2px silver;
+            background-color: rgba(255, 255, 255, .1);
         }
 
         &:active {

@@ -37,7 +37,7 @@ http://localhost:3000/
 
 ## Links
 
-- Link do repositório da REST API: [Link](https://github.com/AdrielGAmorim/noticias-candidatos-RESTAPI/)
+- Link do repositório da REST API: [Aqui](https://github.com/AdrielGAmorim/noticias-candidatos-RESTAPI/)
 
 
 ## Screenshots
