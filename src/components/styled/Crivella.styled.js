@@ -155,7 +155,7 @@ export const NewsButton = styled.button`
     &:hover,
     &:focus {
         transform: scale(1.01);
-        box-shadow: 2px 2px 3px 2px #323232;
+        box-shadow: 2px 2px 3px #323232;
     }
 
     h3 {

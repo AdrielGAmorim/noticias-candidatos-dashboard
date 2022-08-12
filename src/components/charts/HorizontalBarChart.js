@@ -62,13 +62,13 @@ const HorizontalBarChart = () => {
     // Separates dates into an array by month
     crivellaList.forEach( async (item) => {
         if(item.date_published.includes("-08-")) {
-            crivellaMonthAugust.push("Agosto");
+            crivellaMonthAugust.push("Ago/16");
         }
         if(item.date_published.includes("-09-")) {
-            crivellaMonthSeptember.push("Setembro");
+            crivellaMonthSeptember.push("Set/16");
         }
         if(item.date_published.includes("-10-")) {
-            crivellaMonthOctober.push("Outubro");
+            crivellaMonthOctober.push("Out/16");
         }
     })
     // Then reduces the array counting each month
@@ -121,13 +121,13 @@ const HorizontalBarChart = () => {
     // Separates dates into an array by month
     freixoList.forEach( async (item) => {
         if(item.date_published.includes("-08-")) {
-            freixoMonthAugust.push("Agosto");
+            freixoMonthAugust.push("Ago/16");
         }
         if(item.date_published.includes("-09-")) {
-            freixoMonthSeptember.push("Setembro");
+            freixoMonthSeptember.push("Set/16");
         }
         if(item.date_published.includes("-10-")) {
-            freixoMonthOctober.push("Outubro");
+            freixoMonthOctober.push("Out/16");
         }
     })
     // Then reduces the array counting each month

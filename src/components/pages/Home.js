@@ -13,7 +13,7 @@ const Home = () => {
                 </section>
                 <section>
                     <h2>Notícias por candidato por mês</h2>
-                <HorizontalBarChart />
+                    <HorizontalBarChart />
                 </section>
             </Column>
             <Column>

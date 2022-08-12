@@ -40,13 +40,13 @@ const LineChart = () => {
     // Separates dates into an array by month
     chart.forEach( async (item) => {
         if(item.date_published.includes("-08-")) {
-            monthAugust.push("Agosto");
+            monthAugust.push("Ago/16");
         }
         if(item.date_published.includes("-09-")) {
-            monthSeptember.push("Setembro");
+            monthSeptember.push("Set/16");
         }
         if(item.date_published.includes("-10-")) {
-            monthOctober.push("Outubro");
+            monthOctober.push("Out/16");
         }
     })
     // Then reduces the array counting each month

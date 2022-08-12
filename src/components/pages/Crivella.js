@@ -77,9 +77,10 @@ const Crivella = () => {
         });
 
         var journalWithMostNews = {
-            "globo_g1": globo_g1
+            "": 0
         };
-        for(let i = 0; i < 18; i++) {
+        for(let i = 0; i < 19; i++) {
+            if(Object.values(journalWithMostNews) < globo_g1) journalWithMostNews = {"globo_g1": globo_g1}
             if(Object.values(journalWithMostNews) < extra) journalWithMostNews = {"extra": extra}
             if(Object.values(journalWithMostNews) < r7) journalWithMostNews = {"r7": r7}
             if(Object.values(journalWithMostNews) < dci) journalWithMostNews = {"dci": dci}
@@ -124,8 +125,12 @@ const Crivella = () => {
                     <h2>Jornal com mais notícias publicadas sobre o candidato:</h2>
                     <StatisticsWrapper>
                         <p>
-                            {Object.keys(getJournalWithMostNews())[0]}<br/>
-                            {Object.values(getJournalWithMostNews())[0]}
+                            {Object.keys(getJournalWithMostNews())[0] ?
+                            Object.keys(getJournalWithMostNews())[0] :
+                            ""}<br/>
+                            {Object.values(getJournalWithMostNews())[0] ?
+                            Object.values(getJournalWithMostNews())[0] :
+                            ""}
                         </p>
                         <img src="./images/overlay.png" alt="" />
                     </StatisticsWrapper>
@@ -136,7 +141,11 @@ const Crivella = () => {
                 <DataWrapper>
                     <h2>Quantidade total de notícias publicadas sobre o candidato:</h2>
                     <StatisticsWrapper>
-                        <p>{crivellaJournalList.length}</p>
+                        <p>
+                            {crivellaJournalList.length ?
+                            crivellaJournalList.length :
+                            ""}
+                        </p>
                         <img src="./images/overlay.png" alt="" />
                     </StatisticsWrapper>
                 </DataWrapper>
@@ -147,33 +156,69 @@ const Crivella = () => {
                     {randNews6 ? (
                         <>
                             <NewsButton onClick={() => {handleClick(randNews1.url)}}>
-                                <h3>{randNews1.title}</h3>
-                                <p>{`Fonte: ${randNews1.source}`}</p>
+                                <h3>{randNews1.title ?
+                                    randNews1.title :
+                                    ""
+                                }</h3>
+                                <p>{randNews1.source ?
+                                    `Fonte: ${randNews1.source}` :
+                                    ""
+                                }</p>
                             </NewsButton>
 
                             <NewsButton onClick={() => {handleClick(randNews2.url)}}>
-                                <h3>{randNews2.title}</h3>
-                                <p>{`Fonte: ${randNews2.source}`}</p>
+                                <h3>{randNews2.title ?
+                                    randNews2.title :
+                                    ""
+                                }</h3>
+                                <p>{randNews2.source ?
+                                    `Fonte: ${randNews2.source}` :
+                                    ""
+                                }</p>
                             </NewsButton>
                             
                             <NewsButton onClick={() => {handleClick(randNews3.url)}}>
-                                <h3>{randNews3.title}</h3>
-                                <p>{`Fonte: ${randNews3.source}`}</p>
+                                <h3>{randNews3.title ?
+                                    randNews3.title :
+                                    ""
+                                }</h3>
+                                <p>{randNews3.source ?
+                                    `Fonte: ${randNews3.source}` :
+                                    ""
+                                }</p>
                             </NewsButton>
 
                             <NewsButton onClick={() => {handleClick(randNews4.url)}}>
-                                <h3>{randNews4.title}</h3>
-                                <p>{`Fonte: ${randNews4.source}`}</p>
+                                <h3>{randNews4.title ?
+                                    randNews4.title :
+                                    ""
+                                }</h3>
+                                <p>{randNews4.source ?
+                                    `Fonte: ${randNews4.source}` :
+                                    ""
+                                }</p>
                             </NewsButton>
 
                             <NewsButton onClick={() => {handleClick(randNews5.url)}}>
-                                <h3>{randNews5.title}</h3>
-                                <p>{`Fonte: ${randNews5.source}`}</p>
+                                <h3>{randNews5.title ?
+                                    randNews5.title :
+                                    ""
+                                }</h3>
+                                <p>{randNews5.source ?
+                                    `Fonte: ${randNews5.source}` :
+                                    ""
+                                }</p>
                             </NewsButton>
 
                             <NewsButton onClick={() => {handleClick(randNews6.url)}}>
-                                <h3>{randNews6.title}</h3>
-                                <p>{`Fonte: ${randNews6.source}`}</p>
+                                <h3>{randNews6.title ?
+                                    randNews6.title :
+                                    ""
+                                }</h3>
+                                <p>{randNews6.source ?
+                                    `Fonte: ${randNews6.source}` :
+                                    ""
+                                }</p>
                             </NewsButton>
                         </>
                     ) : (
