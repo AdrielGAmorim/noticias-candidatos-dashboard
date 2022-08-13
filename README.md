@@ -44,12 +44,15 @@ http://localhost:3000/
 
 ### Desktop preview 
 ![Desktop view](./public/images/screenshots/ss-1.png)
+<sub>*App pode ter sofrido pequenas alterações estéticas</sub>
 
 ### Tablet/ Laptop preview 
 ![Tablet/ Laptop view](./public/images/screenshots/ss-2.png)
+<sub>*App pode ter sofrido pequenas alterações estéticas</sub>
 
 ### Mobile preview 
 ![Mobile view](./public/images/screenshots/ss-3.png)
+<sub>*App pode ter sofrido pequenas alterações estéticas</sub>
 
 
 ## Criado com
