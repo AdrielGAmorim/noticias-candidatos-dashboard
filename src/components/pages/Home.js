@@ -8,7 +8,7 @@ const Home = () => {
         <StyledHome>
             <Column>
                 <section>
-                    <h2>Quantidade de notícias por candidato</h2>
+                    <h2>Notícias por candidato</h2>
                     <BarChart />
                 </section>
                 <section>
@@ -18,7 +18,7 @@ const Home = () => {
             </Column>
             <Column>
                 <section>
-                    <h2>Quantidade de notícias por jornal</h2>
+                    <h2>Notícias por jornal</h2>
                     <PieChart />
                 </section>
             </Column>

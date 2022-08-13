@@ -29,7 +29,7 @@ const Freixo = () => {
     }, [])
 
 
-    // Creates an array with only Freixo's news
+    // Uses `chart` to create an array with only Freixo's news
     let freixoList = [];
     chart.forEach( async (item) => {
         if(item.candidato === "Freixo") {

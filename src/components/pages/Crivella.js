@@ -29,7 +29,7 @@ const Crivella = () => {
     }, [])
 
 
-    // Creates an array with only Crivella's news
+    // Uses `chart` to create an array with only Crivella's news
     let crivellaList = [];
     chart.forEach( async (item) => {
         if(item.candidato === "Crivella") {
