@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledCrivella = styled.div`
-    width: 80%;
+    width: 100%;
     display: flex;
 
     @media screen and (max-width: 1099px) {

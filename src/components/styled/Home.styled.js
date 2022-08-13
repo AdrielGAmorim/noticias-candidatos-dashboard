@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHome = styled.div`
-    max-width: 90%;
+    width: 100%;
     margin: 3rem auto;
     display: flex;
     justify-content: center;

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 export const Navbar = styled.nav`
     height: 100%;
-    width: 250px;
+    width: 300px;
     background-color: rgba(0, 0, 0, .8);
     text-align: center;
     transition: 1s ease;
@@ -175,7 +175,7 @@ export const StyledActiveLink = styled(NavLink)`
     color: #F9F9F9;
     font-size: 1.5rem;
     font-weight: bold;
-    padding: .5rem;
+    padding: .5rem 2rem;
     border-radius: .5rem;
     transition: all 300ms cubic-bezier(0.5, 0.5, 0.5, 1.5);
 

@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 export const StyledInformation = styled.div`
-    width: 80%;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     overflow-y: auto;
 
     section {
-        max-width: 600px;
+        height: auto;
         margin 2rem auto;
         border: 3px solid rgba(0, 0, 0, .8);
         border-radius: 1rem;

@@ -38,71 +38,34 @@ const Crivella = () => {
     })
 
     // Quantity of news per journal
+    let crivellaNews;
     let crivellaJournalList = [];
     // Separates journals into an array
     crivellaList.forEach( async (item) => {
         if(item.source) crivellaJournalList.push(item.source);
     })
 
+    // Then reduces the array counting each author
+    crivellaNews = crivellaJournalList.reduce((count,currentValue) => {
+        return (
+            count[currentValue] ? ++count[currentValue] : (count[currentValue] = 1),
+            count
+        );
+    },
+    {});
+
     // Getting the journal with the most news.
-    // Kinda bruteforce I know, but I could'n find a better way
-    // to do it other than just putting the number there.
-    var getJournalWithMostNews = () => {
-        var globo_g1 = 0, extra = 0, r7 = 0, dci = 0, odia = 0,
-            jb = 0, epoca = 0, bing = 0, otempo = 0, folha = 0,
-            zerohora = 0, elpais = 0,  hora_sc = 0, exame = 0,
-            uol = 0, em = 0, senado_federal = 0,
-            planalto_presidencia = 0, gesporte = 0;
-
-        crivellaJournalList.forEach( async (e) => {
-            if(e === "globo_g1") globo_g1 += 1;
-            if(e === "extra") extra += 1;
-            if(e === "r7") r7 += 1;
-            if(e === "dci") dci += 1;
-            if(e === "odia") odia += 1;
-            if(e === "jb") jb += 1;
-            if(e === "epoca") epoca += 1;
-            if(e === "bing") bing += 1;
-            if(e === "otempo") otempo += 1;
-            if(e === "folha") folha += 1;
-            if(e === "zerohora") zerohora += 1;
-            if(e === "elpais") elpais += 1;
-            if(e === "hora_sc") hora_sc += 1;
-            if(e === "exame") exame += 1;
-            if(e === "uol") uol += 1;
-            if(e === "em") em += 1;
-            if(e === "senado_federal") senado_federal += 1;
-            if(e === "planalto_presidencia") planalto_presidencia += 1;
-            if(e === "gesporte") gesporte += 1;
-        });
-
-        var journalWithMostNews = {
-            "": 0
-        };
-        for(let i = 0; i < 19; i++) {
-            if(Object.values(journalWithMostNews) < globo_g1) journalWithMostNews = {"globo_g1": globo_g1}
-            if(Object.values(journalWithMostNews) < extra) journalWithMostNews = {"extra": extra}
-            if(Object.values(journalWithMostNews) < r7) journalWithMostNews = {"r7": r7}
-            if(Object.values(journalWithMostNews) < dci) journalWithMostNews = {"dci": dci}
-            if(Object.values(journalWithMostNews) < odia) journalWithMostNews = {"odia": odia}
-            if(Object.values(journalWithMostNews) < jb) journalWithMostNews = {"jb": jb}
-            if(Object.values(journalWithMostNews) < epoca) journalWithMostNews = {"epoca": epoca}
-            if(Object.values(journalWithMostNews) < bing) journalWithMostNews = {"bing": bing}
-            if(Object.values(journalWithMostNews) < otempo) journalWithMostNews = {"otempo": otempo}
-            if(Object.values(journalWithMostNews) < folha) journalWithMostNews = {"folha": folha}
-            if(Object.values(journalWithMostNews) < zerohora) journalWithMostNews = {"zerohora": zerohora}
-            if(Object.values(journalWithMostNews) < elpais) journalWithMostNews = {"elpais": elpais}
-            if(Object.values(journalWithMostNews) < hora_sc) journalWithMostNews = {"hora_sc": hora_sc}
-            if(Object.values(journalWithMostNews) < exame) journalWithMostNews = {"exame": exame}
-            if(Object.values(journalWithMostNews) < uol) journalWithMostNews = {"uol": uol}
-            if(Object.values(journalWithMostNews) < em) journalWithMostNews = {"em": em}
-            if(Object.values(journalWithMostNews) < senado_federal) journalWithMostNews = {"senado_federal": senado_federal}
-            if(Object.values(journalWithMostNews) < planalto_presidencia) journalWithMostNews = {"planalto_presidencia": planalto_presidencia}
-            if(Object.values(journalWithMostNews) < gesporte) journalWithMostNews = {"gesporte": gesporte}
+    var journalWithMostNews = [];
+    var counter = 0;
+    Object.entries(crivellaNews).forEach((item) => {
+        if(item) {
+            if(item[1] > counter) {
+                journalWithMostNews = item;
+                counter = item[1];
+            }
         }
-        
-        return journalWithMostNews;
-    }
+    })
+
 
     // Get a random news object
     var randNews1 = crivellaList[Math.floor(Math.random()*crivellaList.length)];
@@ -125,11 +88,11 @@ const Crivella = () => {
                     <h2>Jornal com mais notícias publicadas sobre o candidato:</h2>
                     <StatisticsWrapper>
                         <p>
-                            {Object.keys(getJournalWithMostNews())[0] ?
-                            Object.keys(getJournalWithMostNews())[0] :
+                            {journalWithMostNews ?
+                            journalWithMostNews[0] :
                             ""}<br/>
-                            {Object.values(getJournalWithMostNews())[0] ?
-                            Object.values(getJournalWithMostNews())[0] :
+                            {journalWithMostNews ?
+                            journalWithMostNews[1] :
                             ""}
                         </p>
                         <img src="./images/overlay.png" alt="" />

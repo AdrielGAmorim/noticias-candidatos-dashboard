@@ -1,5 +1,6 @@
 import DoughnutChart from '../charts/DoughnutChart'
 import LineChart from '../charts/LineChart';
+import PolarAreaChart from '../charts/PolarAreaChart';
 import { StyledInformation } from '../styled/Information.styled';
 
 const Information = () => {
@@ -12,6 +13,10 @@ const Information = () => {
             <section>
                 <h2>Notícias publicadas por autor</h2>
                 <DoughnutChart />
+            </section>
+            <section>
+                <h2>Top 3 autores</h2>
+                <PolarAreaChart />
             </section>
         </StyledInformation>
      );

@@ -52,10 +52,10 @@ const App = () => {
                   <StyledActiveLink to='/' onClick={!active && showMenu}> Home </StyledActiveLink>
                 </li>
                 <li>
-                  <StyledActiveLink to='/crivella' onClick={!active && showMenu}> Crivella &#38; News </StyledActiveLink>
+                  <StyledActiveLink to='/crivella' onClick={!active && showMenu}> Crivella </StyledActiveLink>
                 </li>
                 <li>
-                  <StyledActiveLink to='/freixo' onClick={!active && showMenu}> Freixo &#38; News </StyledActiveLink>
+                  <StyledActiveLink to='/freixo' onClick={!active && showMenu}> Freixo </StyledActiveLink>
                 </li>
                 <li>
                   <StyledActiveLink to='/information' onClick={!active && showMenu}> Mais dados </StyledActiveLink>
