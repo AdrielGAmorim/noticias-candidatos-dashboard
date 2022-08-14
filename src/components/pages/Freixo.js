@@ -114,6 +114,7 @@ const Freixo = () => {
 
             </ImagesSection>
             <NewsSection>
+                <h1>Notícias aleatórias sobre o Freixo</h1>
                 <div>
                     {randNews6 ? (
                         <>

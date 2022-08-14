@@ -117,6 +117,12 @@ export const NewsSection = styled.section`
     flex-direction: column;
     overflow-y: auto;
 
+    h1 {
+        margin: 3rem auto;
+        font-size: 2rem;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
+    }
+
     div {
         width: 90%;
         margin: auto;
@@ -155,7 +161,7 @@ export const NewsButton = styled.button`
     &:hover,
     &:focus {
         transform: scale(1.01);
-        box-shadow: 2px 2px 3px #323232;
+        box-shadow: 2px 2px 3pxrgba(0, 0, 0, .8);
     }
 
     h3 {
@@ -167,7 +173,7 @@ export const NewsButton = styled.button`
         font-size: 1rem;
         padding: 2px;
         margin-bottom: 0;
-        box-shadow: 1px 1px 3px #323232;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, .8);
         border-radius: 3px;
         text-transform: capitalize;
     }

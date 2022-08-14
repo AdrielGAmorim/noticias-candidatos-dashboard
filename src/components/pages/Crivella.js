@@ -115,6 +115,7 @@ const Crivella = () => {
 
             </ImagesSection>
             <NewsSection>
+                <h1>Notícias aleatórias sobre o Crivella</h1>
                 <div>
                     {randNews6 ? (
                         <>
