@@ -102,7 +102,7 @@ export const StatisticsWrapper = styled.div`
         max-width: 200px;
         max-height: 200px;
         border-radius: 50%;
-        transition: transform 600ms cubic-bezier(0.8, 0.8, 0.8, 1.0);
+        transition: transform 400ms cubic-bezier(0.8, 0.8, 0.8, 1.0);
 
         &:hover {
             transform: rotate(180deg);
