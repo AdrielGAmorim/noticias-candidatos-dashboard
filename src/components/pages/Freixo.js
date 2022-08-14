@@ -101,7 +101,7 @@ const Freixo = () => {
                     <img src="./images/freixo.png" alt="" />
                 </FloatingImg>
                 <DataWrapper>
-                    <h2>Quantidade total de notícias publicadas sobre o candidato:</h2>
+                    <h2>Total de notícias publicadas sobre o candidato:</h2>
                     <StatisticsWrapper>
                         <p>
                             {freixoJournalList.length ?

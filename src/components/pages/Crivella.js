@@ -102,7 +102,7 @@ const Crivella = () => {
                     <img src="./images/crivella.jpg" alt="" />
                 </FloatingImg>
                 <DataWrapper>
-                    <h2>Quantidade total de notícias publicadas sobre o candidato:</h2>
+                    <h2>Total de notícias publicadas sobre o candidato:</h2>
                     <StatisticsWrapper>
                         <p>
                             {crivellaJournalList.length ?
