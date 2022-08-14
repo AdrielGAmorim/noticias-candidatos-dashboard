@@ -1,6 +1,6 @@
 # Noticias Candidatos Dashboard
 
-Esse App disponibiliza uma interface com estatísticas e gráficos, consumindo a REST API disponibilizada nesse [Link](https://github.com/AdrielGAmorim/noticias-candidatos-RESTAPI/).
+Esse App disponibiliza uma interface com estatísticas e gráficos, consumindo a REST API disponibilizada neste [Repositório](https://github.com/AdrielGAmorim/noticias-candidatos-RESTAPI/).
 
 
 ## Para execução do App
@@ -11,7 +11,7 @@ Esse App disponibiliza uma interface com estatísticas e gráficos, consumindo a
 
 * Node.js instalado.
 
-* Para o correto funcionamento do App, você deverá se encaminhar para este [Link](https://github.com/AdrielGAmorim/noticias-candidatos-RESTAPI/) e seguir as instruções para iniciar o REST API Server.
+* Para o correto funcionamento do App, você deverá se encaminhar para este [Repositório](https://github.com/AdrielGAmorim/noticias-candidatos-RESTAPI/), e seguir as instruções para iniciar o REST API Server.
 
 
 ### Execução
