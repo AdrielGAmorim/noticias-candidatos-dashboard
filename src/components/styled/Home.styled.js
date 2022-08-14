@@ -24,10 +24,11 @@ export const Column = styled.div`
         border: 3px solid rgba(0, 0, 0, .8);
         border-radius: 1rem;
         text-align: center;
+        transition: all 200ms linear;
 
         &:hover,
         &:focus {
-            box-shadow: 1px 1px 2px #323232;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
         }
 
         h2 {
