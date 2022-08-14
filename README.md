@@ -37,22 +37,22 @@ http://localhost:3000/
 
 ## Links
 
-- Link do repositório da REST API: [Aqui](https://github.com/AdrielGAmorim/noticias-candidatos-RESTAPI/)
+- Repositório da REST API: [Aqui](https://github.com/AdrielGAmorim/noticias-candidatos-RESTAPI/)
 
 
 ## Screenshots
 
-### Desktop preview 
+### Desktop preview*
 ![Desktop view](./public/images/screenshots/ss-1.png)
-<sub>*Apenas preview, app pode ter passado po pequenas alterações</sub>
+<sub>*Apenas preview, app pode ter passado por pequenas alterações</sub>
 
-### Tablet/ Laptop preview 
+### Tablet/ Laptop preview*
 ![Tablet/ Laptop view](./public/images/screenshots/ss-2.png)
-<sub>*Apenas preview, app pode ter passado po pequenas alterações</sub>
+<sub>*Apenas preview, app pode ter passado por pequenas alterações</sub>
 
-### Mobile preview 
+### Mobile preview*
 ![Mobile view](./public/images/screenshots/ss-3.png)
-<sub>*Apenas preview, app pode ter passado po pequenas alterações</sub>
+<sub>*Apenas preview, app pode ter passado por pequenas alterações</sub>
 
 
 ## Criado com
