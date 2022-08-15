@@ -14,7 +14,10 @@ export const StyledInformation = styled.div`
         border: 3px solid rgba(0, 0, 0, .8);
         border-radius: 1rem;
         text-align: center;
-        transition: all 200ms linear;
+        background-color: ${p => p.theme.colorBackgroundPlus};
+        color: ${p => p.theme.colorText};
+        border: 3px solid ${p => p.theme.colorText};
+        transition: all 500ms;
 
         &:hover,
         &:focus {

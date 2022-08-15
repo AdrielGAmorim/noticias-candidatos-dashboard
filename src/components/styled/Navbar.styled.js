@@ -113,7 +113,7 @@ export const Logo = styled.div`
 
 export const StyledActiveLink = styled(NavLink)`
     text-decoration: none;
-    color: #F9F9F9;
+    color: #E5E5E5;
     font-size: 1.5rem;
     font-weight: bold;
     padding: .5rem 3rem;

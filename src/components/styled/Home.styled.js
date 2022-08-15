@@ -20,12 +20,12 @@ export const Column = styled.div`
     section {
         width: 30vw;
         margin: 1rem;
-        border: 3px solid rgba(0, 0, 0, .8);
         border-radius: 1rem;
         text-align: center;
         background-color: ${p => p.theme.colorBackgroundPlus};
         color: ${p => p.theme.colorText};
-        transition: all 300ms;
+        border: 3px solid ${p => p.theme.colorText};
+        transition: all 500ms;
 
         &:hover,
         &:focus {

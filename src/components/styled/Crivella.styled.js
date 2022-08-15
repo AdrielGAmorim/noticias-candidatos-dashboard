@@ -95,7 +95,8 @@ export const StatisticsWrapper = styled.div`
         font-weight: 700;
         transform: translate(-50%, -50%);
         text-transform: capitalize;
-        color: rgba(0, 0, 0, .8);
+        color: ${p => p.theme.colorText};
+        transition: background 500ms;
     }
 
     img {
@@ -122,7 +123,7 @@ export const NewsSection = styled.section`
     h1 {
         margin: 3rem auto;
         font-size: 2rem;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
+        text-shadow: 1px 1px 2px ${p => p.theme.colorText};
     }
 
     div {
@@ -150,7 +151,6 @@ export const NewsButton = styled.button`
     width: 400px;
     height: 12rem;
     margin: 1rem auto;
-    border: 3px solid rgba(0, 0, 0, .8);
     border-radius: 1rem;
     background-color: #F9F9F9;
     display: flex;
@@ -158,8 +158,11 @@ export const NewsButton = styled.button`
     justify-content: space-evenly;
     align-items: center;
     cursor: pointer;
-    transition: all 150ms cubic-bezier(0.5, 0.5, 0.5, 1.5);
-
+    background-color: ${p => p.theme.colorBackgroundPlus};
+    color: ${p => p.theme.colorText};
+    border: 3px solid ${p => p.theme.colorText};
+    transition: background 500ms;
+    
     &:hover,
     &:focus {
         transform: scale(1.01);
@@ -168,14 +171,13 @@ export const NewsButton = styled.button`
 
     h3 {
         font-size: 1.5rem;
-        color: rgba(0, 0, 0, .8);
     }
 
     p {
         font-size: 1rem;
         padding: 2px;
         margin-bottom: 0;
-        box-shadow: 1px 1px 3px rgba(0, 0, 0, .8);
+        box-shadow: 1px 1px 3px ${p => p.theme.colorText};
         border-radius: 3px;
         text-transform: capitalize;
     }

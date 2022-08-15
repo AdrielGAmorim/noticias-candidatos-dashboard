@@ -28,7 +28,7 @@ const themeLight = {
 const themeDark = {
   id: "dark",
   colorBackground: '#393939',
-  colorBackgroundPlus: '#000',
+  colorBackgroundPlus: 'rgba(0, 0, 0, .8)',
   colorText: '#E5E5E5'  
 }
   
@@ -82,7 +82,15 @@ const App = () => {
                     <StyledActiveLink to='/information' onClick={!active && showMenu}> Mais dados </StyledActiveLink>
                   </li>
 
-
+                  <ToggleThemeWrapper>
+                    <label>
+                      {theme.id === "light" ? "Light Mode" : "Dark Mode" }
+                    </label>
+                    <ReactSwitch
+                      onChange={toggleTheme}
+                      checked={theme.id === "dark"}
+                    />
+                  </ToggleThemeWrapper>
                 </ul>
               </Navbar>
 
