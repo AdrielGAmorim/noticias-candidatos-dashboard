@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800"><defs><radialGradient id="sssurface-grad-dark" r="66%" cx="23%" cy="20%">
-      <stop offset="0%" stop-color="5491CB" stop-opacity="0"></stop>
-      <stop offset="100%" stop-color="#13649a" stop-opacity="0.88"></stop>
-    </radialGradient><radialGradient id="sssurface-grad-light" r="32%" cx="31%" cy="29%">
-    <stop offset="0%" stop-color="#f1ffff" stop-opacity="0.8"></stop>
-    <stop offset="100%" stop-color="5491CB" stop-opacity="0"></stop>
-  </radialGradient></defs><g><circle r="350" cx="400" cy="400" fill="5491CB"></circle><circle r="350" cx="400" cy="400" fill="url(#sssurface-grad-dark)"></circle><circle r="350" cx="400" cy="400" fill="url(#sssurface-grad-light)"></circle></g></svg>
