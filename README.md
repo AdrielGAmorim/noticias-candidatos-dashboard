@@ -62,6 +62,8 @@ http://localhost:3000/
 - [React ChartJs 2](https://react-chartjs-2.js.org)
 - [Styled Components](https://styled-components.com)
 - [Material UI](https://mui.com/pt/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- [JestJs](https://jestjs.io/docs/tutorial-react/)
 
 
 ## Author
