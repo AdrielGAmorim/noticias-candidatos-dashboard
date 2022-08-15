@@ -84,10 +84,10 @@ const Crivella = () => {
     return (
         <StyledCrivella>
             <ImagesSection>
-                <DataWrapper>
-                    <h2>Jornal com mais notícias publicadas sobre o candidato:</h2>
+                <DataWrapper data-testid="data__wrapper">
+                    <h2 data-testid="data__h2">Jornal com mais notícias publicadas sobre o candidato:</h2>
                     <StatisticsWrapper>
-                        <p>
+                        <p data-testid="data__p">
                             {journalWithMostNews ?
                             journalWithMostNews[0] :
                             ""}<br/>
