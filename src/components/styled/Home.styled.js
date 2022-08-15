@@ -7,7 +7,6 @@ export const StyledHome = styled.div`
     justify-content: center;
     align-items: center;
 
-
     @media screen and (max-width: 1099px) {
         flex-direction: column;
         margin: 5rem auto 0 auto;
