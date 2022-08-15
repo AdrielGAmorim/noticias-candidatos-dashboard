@@ -67,14 +67,23 @@ const Crivella = () => {
     })
 
 
-    // Get a random news object
-    var randNews1 = crivellaList[Math.floor(Math.random()*crivellaList.length)];
-    var randNews2 = crivellaList[Math.floor(Math.random()*crivellaList.length)];
-    var randNews3 = crivellaList[Math.floor(Math.random()*crivellaList.length)];
-    var randNews4 = crivellaList[Math.floor(Math.random()*crivellaList.length)];
-    var randNews5 = crivellaList[Math.floor(Math.random()*crivellaList.length)];
-    var randNews6 = crivellaList[Math.floor(Math.random()*crivellaList.length)];
-    
+    // Getting array of 6 news
+    var randData = [];
+    for(let i = 0; i < 6; i++) {
+        randData.push(crivellaList[Math.floor(Math.random()*crivellaList.length)]);
+    }
+    // Setting array of components
+    var randNews = [];
+    randData.forEach((data) => {
+        if(data) {
+            randNews.push(
+                <NewsButton onClick={() => {handleClick(data.url)}}>
+                    <h3>{data.title}</h3>
+                    <p>{data.source}</p>
+                </NewsButton>
+            )
+        }
+    });
 
     function handleClick(url) {
         window.open(url, '_blank');
@@ -84,10 +93,10 @@ const Crivella = () => {
     return (
         <StyledCrivella>
             <ImagesSection>
-                <DataWrapper data-testid="data__wrapper">
-                    <h2 data-testid="data__h2">Jornal com mais notícias publicadas sobre o candidato:</h2>
+                <DataWrapper>
+                    <h2>Jornal com mais notícias publicadas sobre o candidato:</h2>
                     <StatisticsWrapper>
-                        <p data-testid="data__p">
+                        <p>
                             {journalWithMostNews ?
                             journalWithMostNews[0] :
                             ""}<br/>
@@ -116,80 +125,7 @@ const Crivella = () => {
             </ImagesSection>
             <NewsSection>
                 <h1>Notícias aleatórias sobre o Crivella</h1>
-                <div>
-                    {randNews6 ? (
-                        <>
-                            <NewsButton onClick={() => {handleClick(randNews1.url)}}>
-                                <h3>{randNews1.title ?
-                                    randNews1.title :
-                                    ""
-                                }</h3>
-                                <p>{randNews1.source ?
-                                    `Fonte: ${randNews1.source}` :
-                                    ""
-                                }</p>
-                            </NewsButton>
-
-                            <NewsButton onClick={() => {handleClick(randNews2.url)}}>
-                                <h3>{randNews2.title ?
-                                    randNews2.title :
-                                    ""
-                                }</h3>
-                                <p>{randNews2.source ?
-                                    `Fonte: ${randNews2.source}` :
-                                    ""
-                                }</p>
-                            </NewsButton>
-                            
-                            <NewsButton onClick={() => {handleClick(randNews3.url)}}>
-                                <h3>{randNews3.title ?
-                                    randNews3.title :
-                                    ""
-                                }</h3>
-                                <p>{randNews3.source ?
-                                    `Fonte: ${randNews3.source}` :
-                                    ""
-                                }</p>
-                            </NewsButton>
-
-                            <NewsButton onClick={() => {handleClick(randNews4.url)}}>
-                                <h3>{randNews4.title ?
-                                    randNews4.title :
-                                    ""
-                                }</h3>
-                                <p>{randNews4.source ?
-                                    `Fonte: ${randNews4.source}` :
-                                    ""
-                                }</p>
-                            </NewsButton>
-
-                            <NewsButton onClick={() => {handleClick(randNews5.url)}}>
-                                <h3>{randNews5.title ?
-                                    randNews5.title :
-                                    ""
-                                }</h3>
-                                <p>{randNews5.source ?
-                                    `Fonte: ${randNews5.source}` :
-                                    ""
-                                }</p>
-                            </NewsButton>
-
-                            <NewsButton onClick={() => {handleClick(randNews6.url)}}>
-                                <h3>{randNews6.title ?
-                                    randNews6.title :
-                                    ""
-                                }</h3>
-                                <p>{randNews6.source ?
-                                    `Fonte: ${randNews6.source}` :
-                                    ""
-                                }</p>
-                            </NewsButton>
-                        </>
-                    ) : (
-                        <Loading src='./images/loading.gif' />
-                    )}
-
-                </div>
+                <div>{randNews}</div>
             </NewsSection>
         </StyledCrivella>
     )

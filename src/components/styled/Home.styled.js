@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const StyledHome = styled.div`
     width: 100%;
-    margin: 3rem auto;
+    padding: 3rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
 
     @media screen and (max-width: 1099px) {
         flex-direction: column;
-        margin: 5rem auto 0 auto;
+        padding: 5rem auto;
     }
 `
     
@@ -23,7 +23,9 @@ export const Column = styled.div`
         border: 3px solid rgba(0, 0, 0, .8);
         border-radius: 1rem;
         text-align: center;
-        transition: all 200ms linear;
+        background-color: ${p => p.theme.colorBackgroundPlus};
+        color: ${p => p.theme.colorText};
+        transition: all 300ms;
 
         &:hover,
         &:focus {

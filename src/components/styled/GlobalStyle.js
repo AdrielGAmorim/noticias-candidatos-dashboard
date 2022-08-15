@@ -8,7 +8,5 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: 'Ubuntu', sans-serif;
-        background-color: #F9F9F9;
-        color: rgba(0, 0, 0, .8);
     }
 `

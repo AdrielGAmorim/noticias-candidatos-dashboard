@@ -66,14 +66,23 @@ const Freixo = () => {
         }
     })
 
-    // Get a random news object
-    var randNews1 = freixoList[Math.floor(Math.random()*freixoList.length)];
-    var randNews2 = freixoList[Math.floor(Math.random()*freixoList.length)];
-    var randNews3 = freixoList[Math.floor(Math.random()*freixoList.length)];
-    var randNews4 = freixoList[Math.floor(Math.random()*freixoList.length)];
-    var randNews5 = freixoList[Math.floor(Math.random()*freixoList.length)];
-    var randNews6 = freixoList[Math.floor(Math.random()*freixoList.length)];
-    
+    // Getting array of 6 news
+    var randData = [];
+    for(let i = 0; i < 6; i++) {
+        randData.push(freixoList[Math.floor(Math.random()*freixoList.length)]);
+    }
+    // Setting array of components
+    var randNews = [];
+    randData.forEach((data) => {
+        if(data) {
+            randNews.push(
+                <NewsButton onClick={() => {handleClick(data.url)}}>
+                    <h3>{data.title}</h3>
+                    <p>{data.source}</p>
+                </NewsButton>
+            )
+        }
+    });
 
     function handleClick(url) {
         window.open(url, '_blank');
@@ -115,80 +124,7 @@ const Freixo = () => {
             </ImagesSection>
             <NewsSection>
                 <h1>Notícias aleatórias sobre o Freixo</h1>
-                <div>
-                    {randNews6 ? (
-                        <>
-                            <NewsButton onClick={() => {handleClick(randNews1.url)}}>
-                                <h3>{randNews1.title ?
-                                    randNews1.title :
-                                    ""
-                                }</h3>
-                                <p>{randNews1.source ?
-                                    `Fonte: ${randNews1.source}` :
-                                    ""
-                                }</p>
-                            </NewsButton>
-
-                            <NewsButton onClick={() => {handleClick(randNews2.url)}}>
-                                <h3>{randNews2.title ?
-                                    randNews2.title :
-                                    ""
-                                }</h3>
-                                <p>{randNews2.source ?
-                                    `Fonte: ${randNews2.source}` :
-                                    ""
-                                }</p>
-                            </NewsButton>
-                            
-                            <NewsButton onClick={() => {handleClick(randNews3.url)}}>
-                                <h3>{randNews3.title ?
-                                    randNews3.title :
-                                    ""
-                                }</h3>
-                                <p>{randNews3.source ?
-                                    `Fonte: ${randNews3.source}` :
-                                    ""
-                                }</p>
-                            </NewsButton>
-
-                            <NewsButton onClick={() => {handleClick(randNews4.url)}}>
-                                <h3>{randNews4.title ?
-                                    randNews4.title :
-                                    ""
-                                }</h3>
-                                <p>{randNews4.source ?
-                                    `Fonte: ${randNews4.source}` :
-                                    ""
-                                }</p>
-                            </NewsButton>
-
-                            <NewsButton onClick={() => {handleClick(randNews5.url)}}>
-                                <h3>{randNews5.title ?
-                                    randNews5.title :
-                                    ""
-                                }</h3>
-                                <p>{randNews5.source ?
-                                    `Fonte: ${randNews5.source}` :
-                                    ""
-                                }</p>
-                            </NewsButton>
-
-                            <NewsButton onClick={() => {handleClick(randNews6.url)}}>
-                                <h3>{randNews6.title ?
-                                    randNews6.title :
-                                    ""
-                                }</h3>
-                                <p>{randNews6.source ?
-                                    `Fonte: ${randNews6.source}` :
-                                    ""
-                                }</p>
-                            </NewsButton>
-                        </>
-                    ) : (
-                        <Loading src='./images/loading.gif' />
-                    )}
-
-                </div>
+                <div>{randNews}</div>
             </NewsSection>
         </StyledFreixo>
     )

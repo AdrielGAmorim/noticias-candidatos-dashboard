@@ -111,6 +111,33 @@ export const Logo = styled.div`
 
 `
 
+export const StyledActiveLink = styled(NavLink)`
+    text-decoration: none;
+    color: #F9F9F9;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: .5rem 3rem;
+    border-radius: .5rem;
+    transition: all 300ms cubic-bezier(0.5, 0.5, 0.5, 1.5);
+
+    &:hover,
+    &:focus {
+        background-color: rgba(0, 0, 0, .2);
+        box-shadow: -1px -1px 2px silver;
+    }
+
+    &.active {
+        background-color: rgba(0, 0, 0, .2);
+        box-shadow: 1px 1px 2px silver;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+        color: #5491CB;
+    }
+
+    &:active {
+        box-shadow: 2px 2px 2px silver;
+    }
+`
+
 export const MenuIconWrapper = styled.div`
     display: none;
 
@@ -168,31 +195,4 @@ export const Closed = styled.div`
         }
     }
     
-`
-
-export const StyledActiveLink = styled(NavLink)`
-    text-decoration: none;
-    color: #F9F9F9;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: .5rem 2rem;
-    border-radius: .5rem;
-    transition: all 300ms cubic-bezier(0.5, 0.5, 0.5, 1.5);
-
-    &:hover,
-    &:focus {
-        background-color: rgba(0, 0, 0, .2);
-        box-shadow: -1px -1px 2px silver;
-    }
-
-    &.active {
-        background-color: rgba(0, 0, 0, .2);
-        box-shadow: 1px 1px 2px silver;
-        text-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
-        color: #5491CB;
-    }
-
-    &:active {
-        box-shadow: 2px 2px 2px silver;
-    }
 `
