@@ -51,7 +51,7 @@ http://localhost:3000/
 <sub>*Apenas preview, app pode ter passado por pequenas alterações</sub>
 
 ### Mobile preview*
-![Mobile view](./public/images/screenshots/ss-3.png)
+![Mobile view](./public/images/screenshots/ss-3.png)__
 <sub>*Apenas preview, app pode ter passado por pequenas alterações</sub>
 
 
