@@ -39,9 +39,10 @@ http://localhost:3000/
 
 
 - Repositório da REST API: [Aqui](https://github.com/AdrielGAmorim/noticias-candidatos-RESTAPI/)
-- Live Site Link <sub>(*Apenas para preview, dados não serão renderizados.
+- Live Site Link : [Live site](https://adrielgamorim.github.io/noticias-candidatos-dashboard/)<br />
+<sub>(*Apenas para preview, dados não serão renderizados.
 Para o correto funcionamento do app, siga as instruções no topo deste documento.)<br />
-(*Alternativamente, é possível clonar o repositório da REST API e rodar o servidor, e acessar o live site que será possível visualizar o app corretamente.)</sub>: [Live site](https://adrielgamorim.github.io/noticias-candidatos-dashboard/)
+(*Alternativamente, é possível clonar o repositório da REST API e rodar o servidor, e acessar o live site que será possível visualizar o app corretamente.)</sub>
 
 
 ## Screenshots
