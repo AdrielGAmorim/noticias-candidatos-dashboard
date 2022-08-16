@@ -3,7 +3,6 @@
 Esse App disponibiliza uma interface com estatísticas e gráficos, consumindo a REST API disponibilizada neste [Repositório](https://github.com/AdrielGAmorim/noticias-candidatos-RESTAPI/).
 
 <br />
-<br />
 
 ## Para execução do App
 
