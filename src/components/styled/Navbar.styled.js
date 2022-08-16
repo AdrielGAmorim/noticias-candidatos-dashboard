@@ -31,7 +31,7 @@ export const Navbar = styled.nav`
         top: -300%;
         background-color: rgba(0, 0, 0, .95);
         text-align: center;
-        transition: 400ms ease;
+        transition: 200ms ease;
         
         &.active {
             top: 0;
@@ -150,9 +150,20 @@ export const MenuIconWrapper = styled.div`
         color: #F9F9F9;
         z-index: 2;
         
+        
+        
         svg {
             cursor: pointer;
             font-size: 4rem;
+            box-shadow: -1px -1px 2px silver;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, .1);
+            }
+
+            &:active {
+                box-shadow: 1px 2px 2px silver;
+            }
         }
     }
     
@@ -187,7 +198,7 @@ export const Closed = styled.div`
         }
 
         &:active {
-            box-shadow: 0 2px 2px silver;
+            box-shadow: 1px 2px 2px silver;
         }
 
         svg {
