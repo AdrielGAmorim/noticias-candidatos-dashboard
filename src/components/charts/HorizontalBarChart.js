@@ -52,10 +52,10 @@ const HorizontalBarChart = () => {
     })
 
     // Quantity of news per month
-    var crivellaNewsPerMonth = {};
-    var crivellaAugustNews;
-    var crivellaSeptemberNews;
-    var crivellaOctoberNews;
+    let crivellaNewsPerMonth = {};
+    let crivellaAugustNews;
+    let crivellaSeptemberNews;
+    let crivellaOctoberNews;
     let crivellaMonthAugust = [];
     let crivellaMonthSeptember = [];
     let crivellaMonthOctober = [];
@@ -111,10 +111,10 @@ const HorizontalBarChart = () => {
     })
 
     // Quantity of news per month
-    var freixoNewsPerMonth = {};
-    var freixoAugustNews;
-    var freixoSeptemberNews;
-    var freixoOctoberNews;
+    let freixoNewsPerMonth = {};
+    let freixoAugustNews;
+    let freixoSeptemberNews;
+    let freixoOctoberNews;
     let freixoMonthAugust = [];
     let freixoMonthSeptember = [];
     let freixoMonthOctober = [];

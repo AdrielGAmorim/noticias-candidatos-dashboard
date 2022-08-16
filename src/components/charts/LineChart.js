@@ -30,10 +30,10 @@ const LineChart = () => {
     
 
     // Quantity of news per month
-    var newsPerMonth = {};
-    var augustNews;
-    var septemberNews;
-    var octoberNews;
+    let newsPerMonth = {};
+    let augustNews;
+    let septemberNews;
+    let octoberNews;
     let monthAugust = [];
     let monthSeptember = [];
     let monthOctober = [];
@@ -75,7 +75,7 @@ const LineChart = () => {
     // Then assigns all months into newsPerMonth
     Object.assign(newsPerMonth, octoberNews, septemberNews, augustNews)
 
-    var data = {
+    let data = {
         labels: Object.keys(newsPerMonth).map(x => x),
         datasets: [{
             label: 'Notícias',
@@ -100,7 +100,7 @@ const LineChart = () => {
         }]
     };
 
-    var options = {
+    let options = {
         maintanAspectRatio: false,
         scales: {
             y: {

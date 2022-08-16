@@ -55,8 +55,8 @@ const Freixo = () => {
     {});
 
     // Getting the journal with the most news.
-    var journalWithMostNews = [];
-    var counter = 0;
+    let journalWithMostNews = [];
+    let counter = 0;
     Object.entries(freixoNews).forEach((item) => {
         if(item) {
             if(item[1] > counter) {
@@ -67,12 +67,12 @@ const Freixo = () => {
     })
 
     // Getting array of 6 news
-    var randData = [];
+    let randData = [];
     for(let i = 0; i < 6; i++) {
         randData.push(freixoList[Math.floor(Math.random()*freixoList.length)]);
     }
     // Setting array of components
-    var randNews = [];
+    let randNews = [];
     randData.forEach((data) => {
         if(data) {
             randNews.push(

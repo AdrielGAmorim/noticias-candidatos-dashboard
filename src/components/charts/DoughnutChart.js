@@ -24,7 +24,7 @@ const DoughnutChart = () => {
     }, [])
     
     // Quantity of news per author
-    var newsPerAuthor;
+    let newsPerAuthor;
     let authorsList = [];
     // Separates authors into an array
     chart.forEach((item) => {

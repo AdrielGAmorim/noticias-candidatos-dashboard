@@ -28,7 +28,7 @@ const PieChart = () => {
     }, [])
     
     // Quantity of news per journal
-    var newsPerJournal;
+    let newsPerJournal;
     let journalsList = [];
     // Separates journals into an array
     chart.forEach( async (item) => {
@@ -43,7 +43,7 @@ const PieChart = () => {
     },
     {});
 
-    var data = {
+    let data = {
         labels: Object.keys(newsPerJournal).map(x => x),
         datasets: [{
             label: `${Object.keys(newsPerJournal).length} jornais`,
@@ -68,7 +68,7 @@ const PieChart = () => {
         }]
     };
 
-    var options = {
+    let options = {
         maintanAspectRatio: false,
         scales: {
             y: {

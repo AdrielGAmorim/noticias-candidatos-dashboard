@@ -39,7 +39,7 @@ const BarChart = () => {
     }, [])
     
     // Quantity of news per candidate
-    var newsPerCandidate;
+    let newsPerCandidate;
     let candidatesList = [];
     // Separates candidates into an array
     chart.forEach( async (item) => {
@@ -54,7 +54,7 @@ const BarChart = () => {
     },
     {});
 
-    var data = {
+    let data = {
         labels: Object.keys(newsPerCandidate).map(x => x),
         datasets: [{
             label: 'Notícias',
@@ -79,7 +79,7 @@ const BarChart = () => {
         }]
     };
 
-    var options = {
+    let options = {
         maintanAspectRatio: false,
         scales: {
             y: {

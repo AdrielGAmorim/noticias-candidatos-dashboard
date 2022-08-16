@@ -30,7 +30,7 @@ const PolarAreaChart = () => {
     }, [])
     
     // Quantity of news per author
-    var newsPerAuthor;
+    let newsPerAuthor;
     let authorsList = [];
     // Separates authors into an array
     chart.forEach((item) => {
@@ -46,11 +46,11 @@ const PolarAreaChart = () => {
     {});
 
     // Converting object into array
-    var newsPerAuthorArray = Object.entries(newsPerAuthor);
+    let newsPerAuthorArray = Object.entries(newsPerAuthor);
     // Getting top one author
-    var counterOne = 0;
-    var topOneAuthor = [];
-    var authorWithMostNews = [];
+    let counterOne = 0;
+    let topOneAuthor = [];
+    let authorWithMostNews = [];
     newsPerAuthorArray.forEach((item) => {
         if(item) {
             if(item[1] > counterOne) {
@@ -62,11 +62,11 @@ const PolarAreaChart = () => {
     topOneAuthor = authorWithMostNews;
     
     // Getting top two author
-    var topTwoAuthor = [];
-    var secondNewsPerAuthorArray = newsPerAuthorArray.filter(
+    let topTwoAuthor = [];
+    let secondNewsPerAuthorArray = newsPerAuthorArray.filter(
         item => item[1] < topOneAuthor[1])
-        var counterTwo = 0;
-        var authorWithMostNews2 = [];
+        let counterTwo = 0;
+        let authorWithMostNews2 = [];
         secondNewsPerAuthorArray.forEach((item) => {
             if(item) {
                 if(item[1] > counterTwo) {
@@ -78,11 +78,11 @@ const PolarAreaChart = () => {
         topTwoAuthor = authorWithMostNews2;
         
         // Getting top three author
-        var topThreeAuthor = [];
-        var thirdNewsPerAuthorArray = secondNewsPerAuthorArray.filter(
+        let topThreeAuthor = [];
+        let thirdNewsPerAuthorArray = secondNewsPerAuthorArray.filter(
         item => item[1] < topTwoAuthor[1])
-        var counterThree = 0;
-    var authorWithMostNews3 = [];
+        let counterThree = 0;
+    let authorWithMostNews3 = [];
     thirdNewsPerAuthorArray.forEach((item) => {
         if(item) {
             if(item[1] > counterThree) {
