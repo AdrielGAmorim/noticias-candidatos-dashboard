@@ -37,7 +37,10 @@ http://localhost:3000/
 
 ## Links
 
+
 - Repositório da REST API: [Aqui](https://github.com/AdrielGAmorim/noticias-candidatos-RESTAPI/)
+- Live site link <sub>(*Apenas para preview, dados não serão renderizados.
+Para o correto funcionamento do app, siga as instruções no topo deste documento.)</sub>: [Live site](https://adrielgamorim.github.io/noticias-candidatos-dashboard/)
 
 
 ## Screenshots
@@ -63,6 +66,7 @@ http://localhost:3000/
 - [Styled Components](https://styled-components.com)
 - [Material UI](https://mui.com/pt/)
 - [React Switch](https://www.npmjs.com/package/react-switch/)
+- [GH Pages](https://www.npmjs.com/package/gh-pages/)
 
 
 ## Author
