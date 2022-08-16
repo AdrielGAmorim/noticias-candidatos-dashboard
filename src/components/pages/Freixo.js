@@ -38,7 +38,7 @@ const Freixo = () => {
     })
 
     // Quantity of news per journal
-    let freixoNews;
+    let freixoNews; // Variable to use ahead
     let freixoJournalList = [];
     // Separates journals into an array
     freixoList.forEach( async (item) => {
@@ -56,7 +56,7 @@ const Freixo = () => {
 
     // Getting the journal with the most news.
     let journalWithMostNews = [];
-    let counter = 0;
+    var counter = 0;
     Object.entries(freixoNews).forEach((item) => {
         if(item) {
             if(item[1] > counter) {
@@ -124,7 +124,7 @@ const Freixo = () => {
             </ImagesSection>
             <NewsSection>
                 <h1>Notícias aleatórias sobre o Freixo</h1>
-                <div>{randNews}</div>
+                <div>{randNews ? randNews : <Loading />}</div>
             </NewsSection>
         </StyledFreixo>
     )

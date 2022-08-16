@@ -38,7 +38,7 @@ const Crivella = () => {
     })
 
     // Quantity of news per journal
-    let crivellaNews;
+    let crivellaNews; // Variable to use ahead
     let crivellaJournalList = [];
     // Separates journals into an array
     crivellaList.forEach( async (item) => {
@@ -56,7 +56,7 @@ const Crivella = () => {
 
     // Getting the journal with the most news.
     let journalWithMostNews = [];
-    let counter = 0;
+    var counter = 0;
     Object.entries(crivellaNews).forEach((item) => {
         if(item) {
             if(item[1] > counter) {
@@ -125,7 +125,7 @@ const Crivella = () => {
             </ImagesSection>
             <NewsSection>
                 <h1>Notícias aleatórias sobre o Crivella</h1>
-                <div>{randNews}</div>
+                <div>{randNews ? randNews : <Loading />}</div>
             </NewsSection>
         </StyledCrivella>
     )

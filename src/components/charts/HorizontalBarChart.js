@@ -53,12 +53,10 @@ const HorizontalBarChart = () => {
 
     // Quantity of news per month
     let crivellaNewsPerMonth = {};
-    let crivellaAugustNews;
-    let crivellaSeptemberNews;
-    let crivellaOctoberNews;
     let crivellaMonthAugust = [];
     let crivellaMonthSeptember = [];
     let crivellaMonthOctober = [];
+    
     // Separates dates into an array by month
     crivellaList.forEach( async (item) => {
         if(item.date_published.includes("-08-")) {
@@ -72,6 +70,7 @@ const HorizontalBarChart = () => {
         }
     })
     // Then reduces the array counting each month
+    let crivellaAugustNews;
     crivellaAugustNews = crivellaMonthAugust.reduce((count,currentValue) => {
         return (
             count[currentValue] ? ++count[currentValue] : (count[currentValue] = 1),
@@ -79,6 +78,8 @@ const HorizontalBarChart = () => {
         );
     },
     {});
+    
+    let crivellaSeptemberNews;
     crivellaSeptemberNews = crivellaMonthSeptember.reduce((count,currentValue) => {
         return (
             count[currentValue] ? ++count[currentValue] : (count[currentValue] = 1),
@@ -86,6 +87,8 @@ const HorizontalBarChart = () => {
         );
     },
     {});
+
+    let crivellaOctoberNews;
     crivellaOctoberNews = crivellaMonthOctober.reduce((count,currentValue) => {
         return (
             count[currentValue] ? ++count[currentValue] : (count[currentValue] = 1),

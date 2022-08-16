@@ -31,25 +31,27 @@ const LineChart = () => {
 
     // Quantity of news per month
     let newsPerMonth = {};
-    let augustNews;
-    let septemberNews;
-    let octoberNews;
     let monthAugust = [];
     let monthSeptember = [];
     let monthOctober = [];
+
     // Separates dates into an array by month
     chart.forEach( async (item) => {
+
         if(item.date_published.includes("-08-")) {
             monthAugust.push("Ago/16");
         }
+
         if(item.date_published.includes("-09-")) {
             monthSeptember.push("Set/16");
         }
+        
         if(item.date_published.includes("-10-")) {
             monthOctober.push("Out/16");
         }
     })
     // Then reduces the array counting each month
+    let augustNews;
     augustNews = monthAugust.reduce((count,currentValue) => {
         return (
             count[currentValue] ? ++count[currentValue] : (count[currentValue] = 1),
@@ -57,6 +59,8 @@ const LineChart = () => {
         );
     },
     {});
+
+    let septemberNews;
     septemberNews = monthSeptember.reduce((count,currentValue) => {
         return (
             count[currentValue] ? ++count[currentValue] : (count[currentValue] = 1),
@@ -64,6 +68,8 @@ const LineChart = () => {
         );
     },
     {});
+
+    let octoberNews;
     octoberNews = monthOctober.reduce((count,currentValue) => {
         return (
             count[currentValue] ? ++count[currentValue] : (count[currentValue] = 1),

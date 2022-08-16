@@ -39,8 +39,9 @@ const BarChart = () => {
     }, [])
     
     // Quantity of news per candidate
-    let newsPerCandidate;
+    let newsPerCandidate; // Variable to use ahead
     let candidatesList = [];
+    
     // Separates candidates into an array
     chart.forEach( async (item) => {
         if(item.candidato) candidatesList.push(item.candidato);

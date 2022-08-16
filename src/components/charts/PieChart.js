@@ -28,13 +28,13 @@ const PieChart = () => {
     }, [])
     
     // Quantity of news per journal
-    let newsPerJournal;
-    let journalsList = [];
     // Separates journals into an array
+    let journalsList = [];
     chart.forEach( async (item) => {
         if(item.source) journalsList.push(item.source);
     })
     // Then reduces the array counting each journal
+    let newsPerJournal;
     newsPerJournal = journalsList.reduce((count,currentValue) => {
         return (
             count[currentValue] ? ++count[currentValue] : (count[currentValue] = 1),
