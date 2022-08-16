@@ -48,15 +48,15 @@ Para o correto funcionamento do app, siga as instruções no topo deste document
 ## Screenshots
 
 ### Desktop preview*
-![Desktop view](./public/images/screenshots/ss-1.png)
+![Desktop view](./src/components/images/screenshots/ss-1.png)
 <sub>*Apenas preview, app pode ter passado por pequenas alterações</sub>
 
 ### Tablet/ Laptop preview*
-![Tablet/ Laptop view](./public/images/screenshots/ss-2.png)
+![Tablet/ Laptop view](./src/components/images/screenshots/ss-2.png)
 <sub>*Apenas preview, app pode ter passado por pequenas alterações</sub>
 
 ### Mobile preview*
-![Mobile view](./public/images/screenshots/ss-3.png) <br />
+![Mobile view](./src/components/images/screenshots/ss-3.png) <br />
 <sub>*Apenas preview, app pode ter passado por pequenas alterações</sub>
 
 
