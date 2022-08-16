@@ -2,8 +2,9 @@
 
 Esse App disponibiliza uma interface com estatísticas e gráficos, consumindo a REST API disponibilizada neste [Repositório](https://github.com/AdrielGAmorim/noticias-candidatos-RESTAPI/).
 
-
 <br />
+<br />
+
 ## Para execução do App
 
 ### Serão necessários os seguintes pré-requisitos:
@@ -14,8 +15,9 @@ Esse App disponibiliza uma interface com estatísticas e gráficos, consumindo a
 
 * Para o correto funcionamento do App, você deverá se encaminhar para este [Repositório](https://github.com/AdrielGAmorim/noticias-candidatos-RESTAPI/), e seguir as instruções para iniciar o REST API Server.
 
-
 <br />
+<br />
+
 ### Execução
 
 * Com o REST API Server ligado;
@@ -36,8 +38,9 @@ http://localhost:3000/
 
 * Você terá acesso ao App.
 
-
 <br />
+<br />
+
 ## Links
 
 
@@ -47,8 +50,9 @@ http://localhost:3000/
 Para o correto funcionamento do app, siga as instruções no topo deste documento.)<br />
 (*Alternativamente, é possível clonar o repositório da REST API, rodar o servidor, e acessar o live site que será possível visualizar o app corretamente.)</sub>
 
-
 <br />
+<br />
+
 ## Screenshots
 
 ### Desktop preview*
@@ -63,8 +67,9 @@ Para o correto funcionamento do app, siga as instruções no topo deste document
 ![Mobile view](./src/components/images/screenshots/ss-3.png) <br />
 <sub>*Apenas preview, app pode ter passado por pequenas alterações</sub>
 
-
 <br />
+<br />
+
 ## Criado com
 
 - [Node.js](https://nodejs.org/pt-br/docs/)
@@ -75,8 +80,9 @@ Para o correto funcionamento do app, siga as instruções no topo deste document
 - [React Switch](https://www.npmjs.com/package/react-switch/)
 - [GH Pages](https://www.npmjs.com/package/gh-pages/)
 
-
 <br />
+<br />
+
 ## Author
 
 - Adriel Amorim - [Portfolio](https://adrielgamorim.github.io/Portfolio/)
