@@ -28,7 +28,7 @@ export const Navbar = styled.nav`
         min-width: 100%;
         height: 100vh;
         position: fixed;
-        top: -100%;
+        top: -300%;
         background-color: rgba(0, 0, 0, .95);
         text-align: center;
         transition: 400ms ease;
