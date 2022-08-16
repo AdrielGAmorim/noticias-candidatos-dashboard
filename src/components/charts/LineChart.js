@@ -30,10 +30,9 @@ const LineChart = () => {
     
 
     // Quantity of news per month
-    let newsPerMonth = {};
-    let monthAugust = [];
-    let monthSeptember = [];
-    let monthOctober = [];
+    const monthAugust = [];
+    const monthSeptember = [];
+    const monthOctober = [];
 
     // Separates dates into an array by month
     chart.forEach( async (item) => {
@@ -51,8 +50,7 @@ const LineChart = () => {
         }
     })
     // Then reduces the array counting each month
-    let augustNews;
-    augustNews = monthAugust.reduce((count,currentValue) => {
+    const augustNews = monthAugust.reduce((count,currentValue) => {
         return (
             count[currentValue] ? ++count[currentValue] : (count[currentValue] = 1),
             count
@@ -60,8 +58,7 @@ const LineChart = () => {
     },
     {});
 
-    let septemberNews;
-    septemberNews = monthSeptember.reduce((count,currentValue) => {
+    const septemberNews = monthSeptember.reduce((count,currentValue) => {
         return (
             count[currentValue] ? ++count[currentValue] : (count[currentValue] = 1),
             count
@@ -69,8 +66,7 @@ const LineChart = () => {
     },
     {});
 
-    let octoberNews;
-    octoberNews = monthOctober.reduce((count,currentValue) => {
+    const octoberNews = monthOctober.reduce((count,currentValue) => {
         return (
             count[currentValue] ? ++count[currentValue] : (count[currentValue] = 1),
             count
@@ -79,9 +75,10 @@ const LineChart = () => {
     {});
 
     // Then assigns all months into newsPerMonth
+    const newsPerMonth = {};
     Object.assign(newsPerMonth, octoberNews, septemberNews, augustNews)
 
-    let data = {
+    const data = {
         labels: Object.keys(newsPerMonth).map(x => x),
         datasets: [{
             label: 'Notícias',
@@ -106,7 +103,7 @@ const LineChart = () => {
         }]
     };
 
-    let options = {
+    const options = {
         maintanAspectRatio: false,
         scales: {
             y: {

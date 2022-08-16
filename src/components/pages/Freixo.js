@@ -33,7 +33,7 @@ const Freixo = () => {
 
 
     // Uses `chart` to create an array with only Freixo's news
-    let freixoList = [];
+    const freixoList = [];
     chart.forEach( async (item) => {
         if(item.candidato === "Freixo") {
             freixoList.push(item);
@@ -41,15 +41,14 @@ const Freixo = () => {
     })
 
     // Quantity of news per journal
-    let freixoNews; // Variable to use ahead
-    let freixoJournalList = [];
+    const freixoJournalList = [];
     // Separates journals into an array
     freixoList.forEach( async (item) => {
         if(item.source) freixoJournalList.push(item.source);
     })
 
     // Then reduces the array counting each author
-    freixoNews = freixoJournalList.reduce((count,currentValue) => {
+    const freixoNews = freixoJournalList.reduce((count,currentValue) => {
         return (
             count[currentValue] ? ++count[currentValue] : (count[currentValue] = 1),
             count
@@ -70,12 +69,12 @@ const Freixo = () => {
     })
 
     // Getting array of 6 news
-    let randData = [];
+    const randData = [];
     for(let i = 0; i < 6; i++) {
         randData.push(freixoList[Math.floor(Math.random()*freixoList.length)]);
     }
     // Setting array of components
-    let randNews = [];
+    const randNews = [];
     randData.forEach((data) => {
         if(data) {
             randNews.push(

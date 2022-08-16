@@ -39,15 +39,14 @@ const BarChart = () => {
     }, [])
     
     // Quantity of news per candidate
-    let newsPerCandidate; // Variable to use ahead
-    let candidatesList = [];
+    const candidatesList = [];
     
     // Separates candidates into an array
     chart.forEach( async (item) => {
         if(item.candidato) candidatesList.push(item.candidato);
     })
     // Then reduces the array counting each candidate
-    newsPerCandidate = candidatesList.reduce((count,currentValue) => {
+    const newsPerCandidate = candidatesList.reduce((count,currentValue) => {
         return (
             count[currentValue] ? ++count[currentValue] : (count[currentValue] = 1),
             count
@@ -55,7 +54,7 @@ const BarChart = () => {
     },
     {});
 
-    let data = {
+    const data = {
         labels: Object.keys(newsPerCandidate).map(x => x),
         datasets: [{
             label: 'Notícias',
@@ -80,7 +79,7 @@ const BarChart = () => {
         }]
     };
 
-    let options = {
+    const options = {
         maintanAspectRatio: false,
         scales: {
             y: {

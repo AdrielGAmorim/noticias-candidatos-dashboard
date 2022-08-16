@@ -24,14 +24,13 @@ const DoughnutChart = () => {
     }, [])
     
     // Quantity of news per author
-    let newsPerAuthor; // Variable to use ahead
-    let authorsList = [];
+    const authorsList = [];
     // Separates authors into an array
     chart.forEach((item) => {
         if(item.author) authorsList.push(item.author);
     })
     // Then reduces the array counting each author
-    newsPerAuthor = authorsList.reduce((count,currentValue) => {
+    const newsPerAuthor = authorsList.reduce((count,currentValue) => {
         return (
             count[currentValue] ? ++count[currentValue] : (count[currentValue] = 1),
             count

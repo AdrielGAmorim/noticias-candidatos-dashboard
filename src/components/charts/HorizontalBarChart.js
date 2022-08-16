@@ -44,7 +44,7 @@ const HorizontalBarChart = () => {
      */
 
     // Creates an array with only Crivella's news
-    let crivellaList = [];
+    const crivellaList = [];
     chart.forEach( async (item) => {
         if(item.candidato === "Crivella") {
             crivellaList.push(item);
@@ -52,10 +52,10 @@ const HorizontalBarChart = () => {
     })
 
     // Quantity of news per month
-    let crivellaNewsPerMonth = {};
-    let crivellaMonthAugust = [];
-    let crivellaMonthSeptember = [];
-    let crivellaMonthOctober = [];
+    const crivellaNewsPerMonth = {};
+    const crivellaMonthAugust = [];
+    const crivellaMonthSeptember = [];
+    const crivellaMonthOctober = [];
     
     // Separates dates into an array by month
     crivellaList.forEach( async (item) => {
@@ -70,8 +70,7 @@ const HorizontalBarChart = () => {
         }
     })
     // Then reduces the array counting each month
-    let crivellaAugustNews;
-    crivellaAugustNews = crivellaMonthAugust.reduce((count,currentValue) => {
+    const crivellaAugustNews = crivellaMonthAugust.reduce((count,currentValue) => {
         return (
             count[currentValue] ? ++count[currentValue] : (count[currentValue] = 1),
             count
@@ -79,8 +78,7 @@ const HorizontalBarChart = () => {
     },
     {});
     
-    let crivellaSeptemberNews;
-    crivellaSeptemberNews = crivellaMonthSeptember.reduce((count,currentValue) => {
+    const crivellaSeptemberNews = crivellaMonthSeptember.reduce((count,currentValue) => {
         return (
             count[currentValue] ? ++count[currentValue] : (count[currentValue] = 1),
             count
@@ -88,8 +86,7 @@ const HorizontalBarChart = () => {
     },
     {});
 
-    let crivellaOctoberNews;
-    crivellaOctoberNews = crivellaMonthOctober.reduce((count,currentValue) => {
+    const crivellaOctoberNews = crivellaMonthOctober.reduce((count,currentValue) => {
         return (
             count[currentValue] ? ++count[currentValue] : (count[currentValue] = 1),
             count
@@ -106,7 +103,7 @@ const HorizontalBarChart = () => {
      */
 
     // Creates an array with only Crivella's news
-    let freixoList = [];
+    const freixoList = [];
     chart.forEach( async (item) => {
         if(item.candidato === "Freixo") {
             freixoList.push(item);
@@ -114,13 +111,9 @@ const HorizontalBarChart = () => {
     })
 
     // Quantity of news per month
-    let freixoNewsPerMonth = {};
-    let freixoAugustNews;
-    let freixoSeptemberNews;
-    let freixoOctoberNews;
-    let freixoMonthAugust = [];
-    let freixoMonthSeptember = [];
-    let freixoMonthOctober = [];
+    const freixoMonthAugust = [];
+    const freixoMonthSeptember = [];
+    const freixoMonthOctober = [];
     // Separates dates into an array by month
     freixoList.forEach( async (item) => {
         if(item.date_published.includes("-08-")) {
@@ -134,21 +127,21 @@ const HorizontalBarChart = () => {
         }
     })
     // Then reduces the array counting each month
-    freixoAugustNews = freixoMonthAugust.reduce((count,currentValue) => {
+    const freixoAugustNews = freixoMonthAugust.reduce((count,currentValue) => {
         return (
             count[currentValue] ? ++count[currentValue] : (count[currentValue] = 1),
             count
         );
     },
     {});
-    freixoSeptemberNews = freixoMonthSeptember.reduce((count,currentValue) => {
+    const freixoSeptemberNews = freixoMonthSeptember.reduce((count,currentValue) => {
         return (
             count[currentValue] ? ++count[currentValue] : (count[currentValue] = 1),
             count
         );
     },
     {});
-    freixoOctoberNews = freixoMonthOctober.reduce((count,currentValue) => {
+    const freixoOctoberNews = freixoMonthOctober.reduce((count,currentValue) => {
         return (
             count[currentValue] ? ++count[currentValue] : (count[currentValue] = 1),
             count
@@ -157,6 +150,7 @@ const HorizontalBarChart = () => {
     {});
 
     // Then assigns all months into freixoNewsPerMonth
+    const freixoNewsPerMonth = {};
     Object.assign(freixoNewsPerMonth, freixoOctoberNews, freixoSeptemberNews, freixoAugustNews)
 
  

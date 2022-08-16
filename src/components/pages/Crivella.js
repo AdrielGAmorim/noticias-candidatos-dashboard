@@ -33,7 +33,7 @@ const Crivella = () => {
 
 
     // Uses `chart` to create an array with only Crivella's news
-    let crivellaList = [];
+    const crivellaList = [];
     chart.forEach( async (item) => {
         if(item.candidato === "Crivella") {
             crivellaList.push(item);
@@ -41,15 +41,14 @@ const Crivella = () => {
     })
 
     // Quantity of news per journal
-    let crivellaNews; // Variable to use ahead
-    let crivellaJournalList = [];
+    const crivellaJournalList = [];
     // Separates journals into an array
     crivellaList.forEach( async (item) => {
         if(item.source) crivellaJournalList.push(item.source);
     })
 
     // Then reduces the array counting each author
-    crivellaNews = crivellaJournalList.reduce((count,currentValue) => {
+    const crivellaNews = crivellaJournalList.reduce((count,currentValue) => {
         return (
             count[currentValue] ? ++count[currentValue] : (count[currentValue] = 1),
             count
@@ -71,12 +70,12 @@ const Crivella = () => {
 
 
     // Getting array of 6 news
-    let randData = [];
+    const randData = [];
     for(let i = 0; i < 6; i++) {
         randData.push(crivellaList[Math.floor(Math.random()*crivellaList.length)]);
     }
     // Setting array of components
-    let randNews = [];
+    const randNews = [];
     randData.forEach((data) => {
         if(data) {
             randNews.push(
