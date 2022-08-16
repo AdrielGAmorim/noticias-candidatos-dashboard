@@ -1,10 +1,16 @@
 {
   "files": {
-    "main.js": "/noticias-candidatos-dashboard/static/js/main.63983de6.js",
+    "main.js": "/noticias-candidatos-dashboard/static/js/main.136c87a8.js",
+    "static/media/freixo.png": "/noticias-candidatos-dashboard/static/media/freixo.a8cee56b807447970542.png",
+    "static/media/error-404.jpg": "/noticias-candidatos-dashboard/static/media/error-404.7a57013476d90a84bd3a.jpg",
+    "static/media/loading.gif": "/noticias-candidatos-dashboard/static/media/loading.a87e57c663e389fc2bc9.gif",
+    "static/media/overlay.png": "/noticias-candidatos-dashboard/static/media/overlay.766a0bec827a15379f0c.png",
+    "static/media/crivella.jpg": "/noticias-candidatos-dashboard/static/media/crivella.3c6f4fb01d43692d774c.jpg",
+    "static/media/logo.svg": "/noticias-candidatos-dashboard/static/media/logo.7036b600aac6d5f044ef1b2e98163642.svg",
     "index.html": "/noticias-candidatos-dashboard/index.html",
-    "main.63983de6.js.map": "/noticias-candidatos-dashboard/static/js/main.63983de6.js.map"
+    "main.136c87a8.js.map": "/noticias-candidatos-dashboard/static/js/main.136c87a8.js.map"
   },
   "entrypoints": [
-    "static/js/main.63983de6.js"
+    "static/js/main.136c87a8.js"
   ]
 }
