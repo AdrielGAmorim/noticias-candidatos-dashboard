@@ -34,13 +34,7 @@ npm install
 npm run start
 ```
 
-* Em seguida, abra seu navegador, copie o endereço abaixo cole na area de endereço no seu navegador e aperte ENTER;
-
-```
-http://localhost:3000/
-```
-
-* Você terá acesso ao App.
+* O servidor local irá inicializar e abrirá automaticamente a pagina inicial do app.
 
 <br />
 
