@@ -6,7 +6,6 @@ export const StyledInformation = styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    overflow-y: auto;
 
     section {
         height: auto;

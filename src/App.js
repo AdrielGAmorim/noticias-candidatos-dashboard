@@ -7,6 +7,7 @@ import Crivella from './components/pages/Crivella';
 import Freixo from './components/pages/Freixo';
 import Information from './components/pages/Information';
 import PageNotFound from './components/pages/PageNotFound';
+import logo from './components/images/logo.svg'
 import { MenuOutlined, Close } from '@mui/icons-material';
 import { GlobalStyle } from './components/styled/GlobalStyle';
 import { PageWrapper, ToggleThemeWrapper } from './components/styled/App.styled';
@@ -52,7 +53,7 @@ const App = () => {
           <ThemeProvider theme={theme}>
             <PageWrapper>
               <Logo>
-                <Link to='/'> <img src="./images/logo.svg" alt="" /> </Link>
+                <Link to='/'> <img src={logo} alt="" /> </Link>
                 <Link to='/'>
                   <p>
                     NCD<br/>

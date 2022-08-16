@@ -1,4 +1,7 @@
 import { useEffect, useState } from 'react';
+import overlay from "../images/overlay.png"
+import freixoImg from '../images/freixo.png';
+import loadingImg from '../images/loading.gif';
 import {
     StyledFreixo,
     ImagesSection,
@@ -103,11 +106,11 @@ const Freixo = () => {
                             journalWithMostNews[1] :
                             ""}
                         </p>
-                        <img src="./images/overlay.png" alt="" />
+                        <img src={overlay} alt="" />
                     </StatisticsWrapper>
                 </DataWrapper>
                 <FloatingImg>
-                    <img src="./images/freixo.png" alt="" />
+                    <img src={freixoImg} alt="" />
                 </FloatingImg>
                 <DataWrapper>
                     <h2>Total de notícias publicadas sobre o candidato:</h2>
@@ -117,14 +120,14 @@ const Freixo = () => {
                             freixoJournalList.length :
                             ""}
                         </p>
-                        <img src="./images/overlay.png" alt="" />
+                        <img src={overlay} alt="" />
                     </StatisticsWrapper>
                 </DataWrapper>
 
             </ImagesSection>
             <NewsSection>
                 <h1>Notícias aleatórias sobre o Freixo</h1>
-                <div>{randNews ? randNews : <Loading />}</div>
+                <div>{randNews ? randNews : <Loading src={loadingImg} />}</div>
             </NewsSection>
         </StyledFreixo>
     )

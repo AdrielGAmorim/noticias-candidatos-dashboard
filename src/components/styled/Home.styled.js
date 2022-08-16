@@ -2,14 +2,13 @@ import styled from "styled-components";
 
 export const StyledHome = styled.div`
     width: 100%;
-    padding: 3rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
 
     @media screen and (max-width: 1099px) {
         flex-direction: column;
-        padding: 5rem auto;
+        margin-top: 6rem;
     }
 `
     
