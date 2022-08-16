@@ -34,7 +34,7 @@ npm install
 npm run start
 ```
 
-* O servidor local irá inicializar e abrirá automaticamente a pagina inicial do app.
+* Após o servidor local inicializar, abrirá automaticamente a pagina inicial do app.
 
 <br />
 
