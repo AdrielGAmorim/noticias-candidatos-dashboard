@@ -150,12 +150,12 @@ export const MenuIconWrapper = styled.div`
         color: #F9F9F9;
         z-index: 2;
         
-        
-        
         svg {
             cursor: pointer;
             font-size: 4rem;
             box-shadow: -1px -1px 2px silver;
+            border-radius: 8px;
+
 
             &:hover {
                 background-color: rgba(255, 255, 255, .1);
